@@ -9,7 +9,7 @@ UTILS			= $(addprefix $(UTILS_PATH), sigsegv.cpp color.cpp check.cpp leaks.cpp)
 TESTS_PATH		= tests/
 MANDATORY		= c s p d i u x upperx percent mix
 
-BONUS			= minus 0 dot sharp space +
+BONUS			= devil minus 0 dot sharp space +
 
 CC				= clang++ -std=c11 -Wno-everything
 CFLAGS			= -g3 -ldl -std=c++11 -I utils/ -I.. $(addprefix -I, $(shell find .. -regex ".*/.*\.h" | grep -oh ".*/"))
