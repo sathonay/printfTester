@@ -22,7 +22,7 @@ int main(int ac, char ** av)
 	testName = av[0];
 	if (ac != 1)
 		printTestNumber(av[1], TEST_LIMIT);
-	SUBCATEGORY(1, 19, cout << endl << FG_LGRAY << "subcategory: limbo" << RESET_ALL << endl;)
+	SUBCATEGORY(1, 20, cout << endl << FG_LGRAY << "subcategory: limbo" << RESET_ALL << endl;)
 	TEST(1, print(" %11.10u ", 1234));
 	TEST(2, print(" %11.10d ", 1234));
 	TEST(3, print(" %11.10i ", 1234));
@@ -42,6 +42,7 @@ int main(int ac, char ** av)
 	TEST(17, print(" %03.3d ", -1));
 	TEST(18, print(" %03.4d ", -1));
 	TEST(19, print(" %2.1 3.2 4.3s ", "this one doesn't work on ubuntu but works on osx (ubuntu -> '%2.1 3.2 4.3s' | osx -> works)"));
+	TEST(20, print(" %"));
 	cout << ENDL;
 	return (0);
 }
